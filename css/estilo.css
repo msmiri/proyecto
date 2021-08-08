@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spectral SC", serif; }
+
+body {
+  background-color: white; }
+
+.textFormat {
+  font-style: normal; }
+
+.spaceMargin {
+  margin-bottom: 25px;
+  margin-top: 25px; }
+
+.margenes {
+  margin: 15px; }
+
+.titleSize {
+  font-size: 50px; }
+
+.contUsSize {
+  font-size: calc(1.375rem + 1.5vw); }
+
+.textoCentrado {
+  text-align: center; }
+
+.navegador {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: #ebe5e5; }
+  .navegador__lista {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .navegador__item {
+    list-style-type: none;
+    margin: 15px;
+    display: inline; }
+  .navegador__link {
+    text-decoration: none;
+    color: black; }
+
+section h2 {
+  font-style: italic; }
+
+body {
+  background-image: url("../media/fondo.jpg"); }
+
+.colorArticle {
+  background-color: #ebe5e5; }
+
+.abusColor {
+  color: black; }
+
+article {
+  letter-spacing: 5px;
+  padding-top: 15px;
+  color: white;
+  text-align: center; }
+
+.textGrad {
+  background-image: linear-gradient(black, grey); }
+
+th {
+  background-color: cornflowerblue; }
+
+.imgMueble {
+  display: block;
+  margin: auto;
+  border: 3px solid black;
+  width: 100%;
+  height: 100%; }
+
+.imgLogo {
+  display: block;
+  margin: auto; }
+
+a:hover {
+  background-color: black;
+  color: blanchedalmond; }
+
+.anotherMargin {
+  margin: 7px; }
+
+.tablaImagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.tablaImagenes img {
+  margin: 10px; }
+
+.margFooter {
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.video {
+  width: 100%; }
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "logo" "header" "menu" "main" "footer"; }
+
+.headerOne {
+  grid-area: header; }
+
+.navOne {
+  grid-area: menu; }
+
+.mainOne {
+  grid-area: main; }
+
+.footOne {
+  grid-area: footer; }
+
+.logoOne {
+  grid-area: logo; }
+
+@media only screen and (max-width: 600px) {
+  .titleSize {
+    font-size: 30px; }
+  article {
+    font-size: 10px; } }
+
+@media only screen and (min-width: 600px) {
+  .titleSize {
+    font-size: 30px; }
+  article {
+    font-size: 13px; } }
+
+@media only screen and (min-width: 768px) {
+  .titleSize {
+    font-size: 40px; }
+  article {
+    font-size: 13px; } }
+
+@media only screen and (min-width: 1200px) {
+  .titleSize {
+    font-size: 50px; }
+  article {
+    font-size: 15px; } }

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Spectral SC", serif;
+}
+
+@mixin mainTitle($fontSize) {
+    font-size: $fontSize;
+}
+
+@mixin articleStyle($fontSize) {
+    font-size: $fontSize;
+}
+
+body {
+    background-color: white;
+}
+
+.textFormat {
+    font-style: normal;
+}
+
+.spaceMargin {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.margenes {
+    margin: 15px;
+}
+
+.titleSize {
+    font-size: 50px;
+}
+
+.contUsSize {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(235, 229, 229);
+
+    &__lista {
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    &__item {
+        list-style-type: none;
+        margin: 15px;
+        display: inline;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+section {
+    h2 {
+        font-style: italic;
+    }
+}
+
+body {
+    background-image: url("../media/fondo.jpg");
+}
+
+.colorArticle {
+    background-color: rgb(235, 229, 229);
+}
+
+.abusColor {
+    color: black;
+}
+
+article {
+    letter-spacing: 5px;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+}
+
+.textGrad {
+    background-image: linear-gradient(black, grey);
+}
+
+th {
+    background-color: cornflowerblue;
+}
+
+.imgMueble {
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.imgLogo {
+    display: block;
+    margin: auto;
+}
+
+a:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.anotherMargin {
+    margin: 7px;
+}
+
+.tablaImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tablaImagenes {
+    img {
+        margin: 10px;
+    }
+}
+
+.margFooter {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.video {
+    width: 100%;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: "logo" "header" "menu" "main" "footer";
+}
+
+.headerOne {
+    grid-area: header;
+}
+
+.navOne {
+    grid-area: menu;
+}
+
+.mainOne {
+    grid-area: main;
+}
+
+.footOne {
+    grid-area: footer;
+}
+
+.logoOne {
+    grid-area: logo;
+}
+
+@media only screen and (max-width: 600px) {
+    .titleSize {
+        @include mainTitle(30px);
+    }
+    article {
+        @include articleStyle(10px);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .titleSize {
+        @include mainTitle(30px);
+    }
+    article {
+        @include articleStyle(13px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .titleSize {
+        @include mainTitle(40px);
+    }
+    article {
+        @include articleStyle(13px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .titleSize {
+        @include mainTitle(50px);
+    }
+    article {
+        @include articleStyle(15px);
+    }
+}
